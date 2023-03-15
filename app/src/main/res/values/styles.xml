@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+
+
+    <style name="Spinner" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textSize">60dp</item>
+    </style>
+
+</resources>

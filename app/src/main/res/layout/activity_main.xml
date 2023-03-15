@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/Spinner"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/spinner"
+        android:background="@drawable/custom"
+        android:padding="10dp"
+        android:hint="Phone Number"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/otpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEditText"
+        android:layout_marginLeft="20dp"
+        android:clickable="false"
+        android:background="@drawable/custom"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:hint="Enter Otp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"/>
+
+    <Button android:id="@+id/btn_generate_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otpEditText"
+        android:layout_margin="20dp"
+        android:background="#800000"
+        android:textColor="#ffffff"
+        android:text="Generate OTP"
+        android:textSize="20sp"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer"
+        android:textSize="30sp"
+        android:layout_below="@id/btn_generate_otp"
+        android:visibility="invisible"/>
+
+    <Button android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timer"
+        android:layout_margin="20dp"
+        android:background="#800000"
+        android:text="Verify and SignIn"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
